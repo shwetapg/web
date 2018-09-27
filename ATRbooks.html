@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="stylesheet" type="text/css" href="ATRbooks.css">
+</head>
+<body>
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header bgimg">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">ATR BOOKS</span> 
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">HOME</a>
+            <a class="mdl-navigation__link" href="">TYPE</a>
+            <a class="mdl-navigation__link" href="">AUTHOR</a>
+            <a class="mdl-navigation__link" href="">LISTS</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer ">
+        <span class="mdl-layout-title">ATR BOOKS</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">HOME</a>
+          <a class="mdl-navigation__link" href="" >TYPE</a>
+          <a class="mdl-navigation__link" href="">AUTHOR</a>
+          <a class="mdl-navigation__link" href="">LISTS</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">       
+        <div class="mdl-grid">	
+			<div class="mdl-cell mdl-cell--8-col">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+	            <div class="mdl-textfield__expandable-holder">
+	               <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for author names.." title="Type in aname>
+						<ul id="myUL">
+							<li><a href="http://www.readprint.com/author-67/Edgar-Allan-Poe-books">Edgar Allan Poe</a></li>
+							<li><a href="http://www.readprint.com/author-28/Charles-Dickens-books">Charles Dickens</a></li>
+							<li><a href="http://www.readprint.com/author-4/Jane-Austen-books">Jane Austen</a></li>
+							<li><a href="http://www.readprint.com/author-83/Mark-Twain-books">Mark Twain</a></li>
+							<li><a href="http://www.readprint.com/author-69/William-Shakespeare-books">William Shakespeare</a></li>
+						</ul>
+						<script src="scripts.js"></script>
+				</div><!--mdl-textfield__expandable-holder-->
+            	</div><!--mdl-textfield mdl-js-textfield -->
+			</div>
+			<div class="mdl-cell mdl-cell--4-col">
+				<div class="mdl-layout mdl-js-layout mdl-color--blue-3">
+				<main class="mdl-layout__content">
+					<div class="mdl-card mdl-shadow--6dp">
+						<div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+							<h2 class="mdl-card__title-text">LOGIN</h2>
+						</div>
+				  	<div class="mdl-card__supporting-text">
+							<form action="#">
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="username" />
+									<label class="mdl-textfield__label" for="username">Username</label>
+								</div>
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="password" id="userpass" />
+									<label class="mdl-textfield__label" for="userpass">Password</label>
+								</div>
+							</form>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in </button>
+						</div>
+					</div>
+				</main>
+			</div><!--mdl layout-->
+			</div><!--sub mdl-cell-->
+			</div><!--sub mdl-grid-->
+			</main>
+			</div>  
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="mdl-grid" style="background-color: hsl(0, 0%, 94%);">
+    	<div class="mdl-cell mdl-cell--2-col"></div>
+    	<div class="mdl-cell mdl-cell--4-col">
+    		<div class="mdl-card mdl-shadow--6dp" style="height:380px;">
+				 <div class="lists_three_column">
+				 	<div class="list_w c-normal">
+				 		<h3 class="lists_list_header green ct-normal centered">TOP 5 AUTHORS</h3>
+				 		<div class="list_i cb-normal">				 			
+				 			<div id="authnum"></div>
+								 <script src="scripts.js"></script>									    
+				 		</div>
+				 	</div>
+				 </div>				  
+			</div>
+		</div>								
+		<div class="mdl-cell madl-cell--4-col">
+			<div class="mdl-card mdl-shadow--6dp" style="height:380px;">				
+				<div class="lists_three_column">
+				 	<div class="list_w c-normal">
+				 		<h3 class="lists_list_header blue ct-normal centered">TOP 5 BOOKS</h3>
+				 		<div class="list_i cb-normal">				 			
+				 			<div id="booknum"></div>
+				 			<script src="scripts.js"></script>								 
+				 		</div>
+				 	</div>
+				 </div>
+			</div>
+		</div>
+		<div class="mdl-cell mdl-cell--2-col"></div>
+		</div>
+		<footer class="mdl-mini-footer">
+		  <div class="mdl-mini-footer__left-section">
+		    <div class="mdl-logo">ATR BOOKS</div>
+		    <ul class="mdl-mini-footer__link-list">
+		      <li><a href="#">Help</a></li>
+		      <li><a href="#">Privacy & Terms</a></li>
+		    </ul>
+		  </div>
+		</footer>    	
+</body>
+</html>
